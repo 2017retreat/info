@@ -48,7 +48,11 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 .copyright{background-color: #111;padding: 1em; color: #5e85a4;}
-
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
 
 @media (max-width: 1400px) {
 	h1{padding: 4em 0;}
