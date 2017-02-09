@@ -47,20 +47,20 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 /*about*/
 
 
-.copyright{background-color: #111;padding: 1em; color: #fff;}
+.copyright{background-color: #111;padding: 1em; color: #5e85a4;}
 
 
-@media (max-width: 1400px) {		
+@media (max-width: 1400px) {
 	h1{padding: 4em 0;}
 }
 
 @media (max-width: 1200px) {
 	h3{font-size: 1.5em;margin-bottom: 0.5em;}
-}	
+}
 
 @media (max-width: 900px) {
 	.items-wrap .gallery-items .caption:hover h3{margin-top: 20%;}
-}	
+}
 
 @media (max-width: 767px) {
 	h1{padding: 4em 0 0 0;font-size: 2em;}
