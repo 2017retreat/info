@@ -32,7 +32,13 @@
 
 
 <link rel="stylesheet" href="assets/style.css">
-
+<style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
 </head>
 
 <body id="home">
@@ -42,8 +48,27 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<h4>Where?  <a href="index.html">back</a></h4>
 					<p></p>
-					<p>The Current Page Is In Construction</p>
-					<p></p>
+					<p>Qwanoes is a youth-focused high adventure Christian residential camp that exists to love kids to life like no other. Founded in 1966, Qwanoes is an ideal place for fun-filled, life-changing experiences.<br>
+						Situated on 55 acres of magnificent scenic waterfront property on Vancouver Island between Victoria and Nanaimo, Qwanoes is a fully-accredited member of the BC Camping Association and Christian Camping International-Canada. As a Christian camp, Qwanoes take principles of the Bible and make them relevant to everyday life.<br>
+					</p>
+					<h3>Address: 1148 Smith Road, Crofton, BC V0R 1R0</h3>
+    				<div id="map"></div>
+					<script>
+      					function initMap() {
+        					var uluru = {lat: -25.363, lng: 131.044};
+        					var map = new google.maps.Map(document.getElementById('map'), {
+          						zoom: 4,
+          						center: uluru
+        					});
+        					var marker = new google.maps.Marker({
+          						position: uluru,
+          						map: map
+        					});
+      					}
+    				</script>
+    				<script async defer
+    					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7pUw3GO87MZzJEOQ90Bn83YloXusmJbw&callback=initMap">
+    				</script>
 					<img src="images/portfolio/3.jpg" width="900" height="600"alt="where">
 					<p></p>
 
