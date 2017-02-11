@@ -93,6 +93,11 @@
 
 .icon .buttonMore{
 	background:url(../../assets/slidingheader/buttonMore.png) #ffffff;
+	position: fixed;
+
+	width: 30%;
+	height: 30%;
+
 }
 
 /* Hide grid and show cross when opening */
