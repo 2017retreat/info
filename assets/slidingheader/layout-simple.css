@@ -91,12 +91,22 @@
 	transition: opacity 0.3s, transform 0.3s;
 }
 
+.icon .buttonMore{
+	background:url(../../assets/slidingheader/buttonMore.png) #ffffff;
+}
+
 /* Hide grid and show cross when opening */
-.icon--cross,
+.icon--cross, .buttonMore,
 .trigger--active .icon--grid {
 	opacity: 0;
 	-webkit-transform: scale3d(0.5, 0.5, 1);
 	transform: scale3d(0.5, 0.5, 1);
+}
+
+.trigger--active .buttonMore {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
 }
 
 .trigger--active .icon--cross {
