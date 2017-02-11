@@ -28,11 +28,11 @@
 /* Intro content */
 .intro__content {
 	position: absolute;
-	bottom: 20;top: 0;
+	bottom: 0;top: 0;
 	text-align: center;
-	padding: 1.5em;
+	padding: 1.8em;
 	width: 100%;
-	font-size: 1.00em;
+	font-size: 1.15em;
 }
 /*
 .intro__title {
