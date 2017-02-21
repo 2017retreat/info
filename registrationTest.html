@@ -62,13 +62,8 @@
 							</div>
 						</div>
 						<div class="row mt">
-							<form action="mailto:xntseven@gmail.com" method="GET">
-    <input name="subject" type="text" />
-    <textarea name="body"></textarea>
-    <input type="submit" value="Send" />
-</form>
 							<div class="col-lg-8 col-lg-offset-2">
-								<form action="mailto:2017churchretreat@gmail.com" method="post" enctype="text/plain">
+								<form role="form">
 								  <div class="form-group">
 								    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name!">
 								    <br>
@@ -88,6 +83,33 @@
 							</div>
 						</div><!-- /row -->
 					</div><!-- /container -->
+					<p></p>
+					<!-- Start code for the form-->
+					<form method="post" name="myemailform" action="form-to-email.php">
+						<p>
+							<label for='name'>Enter Name: </label><br>
+							<input type="text" name="name">
+						</p>
+						<p>
+							<label for='email'>Enter Email Address:</label><br>
+							<input type="text" name="email">
+						</p>
+						<p>
+							<label for='message'>Enter Message:</label> <br>
+							<textarea name="message"></textarea>
+						</p>
+						<input type="submit" name='submit' value="submit">
+					</form>
+					<script language="JavaScript">
+					// Code for validating the form
+					// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+					// for details
+					var frmvalidator  = new Validator("myemailform");
+					frmvalidator.addValidation("name","req","Please provide your name");
+					frmvalidator.addValidation("email","req","Please provide your email");
+					frmvalidator.addValidation("email","email","Please enter a valid email address");
+					</script>
+
 					<p></p>
 					<table>
   <tr>
