@@ -28,14 +28,14 @@
 /* Intro content */
 .intro__content {
 	position: absolute;
-	bottom: 0;top: 5;
+	bottom: 0;top: 0;
 	text-align: center;
-	padding: 1.0em;
+	padding: 1.8em;
 	width: 100%;
-	font-size: 1.00em;
+	font-size: 1.15em;
 
 }
-/*
+
 .intro__title {
 	margin: 0 0 20px;
 	font-weight: 900;
@@ -54,7 +54,7 @@
 .intro__description {
 	margin: 0 auto 0 1em;
 	line-height: 1.2;
-}*/
+}
 
 /* Trigger button with SVG */
 .trigger {
