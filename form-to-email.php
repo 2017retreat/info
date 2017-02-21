@@ -9,7 +9,7 @@ $visitor_email = $_POST['email'];
 $message = $_POST['message'];
 
 //Validate first
-if(empty($name)||empty($visitor_email)) 
+if(empty($name)||empty($visitor_email))
 {
     echo "Name and email are mandatory!";
     exit;
@@ -25,8 +25,8 @@ $email_from = 'tom@amazing-designs.com';//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
-    
-$to = "tom@amazing-designs.com";//<== update the email address
+
+$to = "2017churchretreat@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
@@ -57,5 +57,5 @@ function IsInjected($str)
     return false;
   }
 }
-   
-?> 
+
+?>
