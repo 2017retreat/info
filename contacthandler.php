@@ -1,32 +1,35 @@
 <?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
-
-  //Email information
-  $admin_email = "someone@example.com";
-  $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
-  $comment = $_REQUEST['comment'];
-
-  //send email
-  mail($admin_email, "$subject", $comment, "From:" . $email);
-
-  //Email response
-  echo "Thank you for contacting us!";
-  }
-
-  //if "email" variable is not filled out, display the form
-  else  {
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+    }
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+	    }
+    else{
+	    $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+		// mail("youremail@yoursite.com", $subject, $message, $from);
+		echo "Email sent!";
+	    }
+    }
 ?>
-
- <form method="post">
-  Email: <input name="email" type="text" /><br />
-  Subject: <input name="subject" type="text" /><br />
-  Message:<br />
-  <textarea name="comment" rows="15" cols="40"></textarea><br />
-  <input type="submit" value="Submit" />
-  </form>
-
-<?php
-  }
-?>
+						
