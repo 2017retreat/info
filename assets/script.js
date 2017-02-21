@@ -1,4 +1,4 @@
- 
+
 (function() {
                 var container = document.getElementById( 'container' ),
                     trigger = container.querySelector( 'button.trigger' );
@@ -24,7 +24,7 @@
                 document.body.scrollTop = document.documentElement.scrollTop = 0;
 
                 // disable scrolling
-                window.addEventListener( 'scroll', noscroll );
+                
 
                 trigger.addEventListener( 'click', toggleContent );
 
@@ -32,10 +32,10 @@
                 [].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
             })();
 
-            
+
 jQuery(document).ready(function($) {
- 
-    $(".scroll").click(function(event){   
+
+    $(".scroll").click(function(event){
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800,'swing');
     });
@@ -69,6 +69,3 @@ $('.carousel').swipe( {
      },
      allowPageScroll: 'vertical'
  });
-
-
-
