@@ -103,7 +103,7 @@
 					</div><!-- /.dropdown -->
 					<p><br>Yes! Our activities are fun, but why not just take a break and play pingpong?<br></p>
 					<input id="clickMe" class="btn btn-success" type="button" value="PLAY!" onclick="function();" />
-					<input id="clickMe1" class="btn btn-success" type="button" value="Stop!" onclick="stopfunction();" />
+					<input id="clickMe1" class="btn btn-success" type="button" value="STOP!" onclick="stopfunction();" />
 					<div class="container center">
 					<canvas id="myCanvas" width="600" height="400"></canvas>
 				</div>
@@ -271,7 +271,7 @@
 					    }
 					    draw();
 						};
-						stopfunction(){
+						document.getElementById("clickMe1").onclick = stopfunction(){
 							document.location.reload();
 						};
 					</script>
