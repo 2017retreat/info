@@ -109,6 +109,9 @@
 				</div>
 					<script>
 						document.getElementById("clickMe").onclick = function () {
+							document.getElementById("clickMe1").onclick = stopfunction(){
+								document.location.reload();
+							}
 					    var canvas = document.getElementById("myCanvas");
 					    var ctx = canvas.getContext("2d");
 					    var ballRadius = 10;
@@ -271,9 +274,7 @@
 					    }
 					    draw();
 						};
-						document.getElementById("clickMe1").onclick = stopfunction(){
-							document.location.reload();
-						};
+
 					</script>
 
 				</div>
