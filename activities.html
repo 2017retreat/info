@@ -108,8 +108,12 @@
 					<canvas id="myCanvas" width="600" height="400"></canvas>
 				</div>
 					<script>
+
+					if(document.getElementById("clickMe1").onclick = stopfunction()){
+						document.location.reload();
+					};
 						document.getElementById("clickMe").onclick = function () {
-							
+
 					    var canvas = document.getElementById("myCanvas");
 					    var ctx = canvas.getContext("2d");
 					    var ballRadius = 10;
@@ -174,11 +178,8 @@
 					                        score++;
 					                        if(score == brickRowCount*brickColumnCount) {
 					                            alert("Okay...you win. NOW GO REGISTER RETREAT!");
-												if (confirm('Take Me To Register')) {
-    												window.open ('registration.html','_self',false)
-												} else {confirm('New Round')
+
     													document.location.reload();
-													}
 
 					                        }
 					                    }
