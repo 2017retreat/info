@@ -93,11 +93,12 @@
 					<p></p>
 					<img src="images/activities/basketball.jpg" width="900" height="600"alt="canaan">
 					<p></p>
-
-					
-					<canvas id="myCanvas" width="480" height="320"></canvas>
-
+					<input id="clickMe" type="button" value="Play Ping Pong" onclick="doFunction();" />
+					<div class="container center">
+					<canvas id="myCanvas" width="900" height="600"></canvas>
+				</div>
 					<script>
+						document.getElementById("clickMe").onclick = doFunction;
 					    var canvas = document.getElementById("myCanvas");
 					    var ctx = canvas.getContext("2d");
 					    var ballRadius = 10;
