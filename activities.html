@@ -50,7 +50,7 @@
                             <!-- <li class="menu-item"><a class="smoothScroll" href="#tt" title="Time Table"></a></li> -->
                             <li><a class="smoothScroll" href="#kayak" title="Kayak">- Kayaking</a></li>
 							<li><a class="smoothScroll" href="#others" title="others">- Other Activities - such as pingpong</a></li>
-							<li><a class="smoothScroll" href="#games" title="games">- Let's Play Right Here</a></li>
+							<li><a class="smoothScroll" href="#games" title="games">- Let's Play Pingpong Right Here</a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -103,6 +103,7 @@
 					</div><!-- /.dropdown -->
 					<p><br>Yes! Our activities are fun, but why not just take a break and play pingpong?<br></p>
 					<input id="clickMe" class="btn btn-success" type="button" value="PLAY!" onclick="function();" />
+					<input id="clickMe1" class="btn btn-success" type="button" value="Stop!" onclick="stopfunction();" />
 					<div class="container center">
 					<canvas id="myCanvas" width="600" height="400"></canvas>
 				</div>
@@ -171,8 +172,13 @@
 					                        b.status = 0;
 					                        score++;
 					                        if(score == brickRowCount*brickColumnCount) {
-					                            alert("You win! NOW GO REGISTER RETREAT!");
-					                            document.location.reload();
+					                            alert("Okay...you win. NOW GO REGISTER RETREAT!");
+												if (confirm('Take Me To Register')) {
+    												window.open ('registration.html','_self',false)
+												} else {confirm('New Round')
+    													document.location.reload();
+													}
+
 					                        }
 					                    }
 					                }
@@ -264,6 +270,9 @@
 					        requestAnimationFrame(draw);
 					    }
 					    draw();
+						};
+						stopfunction(){
+							document.location.reload();
 						};
 					</script>
 
