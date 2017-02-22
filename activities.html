@@ -49,8 +49,8 @@
 							<li><a class="smoothScroll" href="#archery" title="Archery">- Archery</a></li>
                             <!-- <li class="menu-item"><a class="smoothScroll" href="#tt" title="Time Table"></a></li> -->
                             <li><a class="smoothScroll" href="#kayak" title="Kayak">- Kayaking</a></li>
-							<li><a class="smoothScroll" href="#others" title="others">- Other Activities</a></li>
-
+							<li><a class="smoothScroll" href="#others" title="others">- Other Activities - such as pingpong</a></li>
+							<li><a class="smoothScroll" href="#games" title="games">- Let's Play Right Here</a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -93,9 +93,18 @@
 					<p></p>
 					<img src="images/activities/basketball.jpg" width="900" height="600"alt="canaan">
 					<p></p>
-					<input id="clickMe" type="button" value="clickMe" onclick="function();" />
+					<section id="games" name="games"></section>
+					<p></p>
+					<h4>Play Pingpong Game</h4>
+					<div class="dropdown">
+						<ul id="nav" class="nav">
+							<li><a class="smoothScroll" href="#intro" title="intro">- back to top</a></li>
+						</ul><!--/ uL#nav -->
+					</div><!-- /.dropdown -->
+					<p><br>Yes! Our activities are fun, but why not just take a break and play pingpong?<br></p>
+					<input id="clickMe" class="btn btn-success" type="button" value="PLAY!" onclick="function();" />
 					<div class="container center">
-					<canvas id="myCanvas" width="900" height="600"></canvas>
+					<canvas id="myCanvas" width="600" height="400"></canvas>
 				</div>
 					<script>
 						document.getElementById("clickMe").onclick = function () {
@@ -162,7 +171,7 @@
 					                        b.status = 0;
 					                        score++;
 					                        if(score == brickRowCount*brickColumnCount) {
-					                            alert("YOU WIN, CONGRATS!");
+					                            alert("You win! NOW GO REGISTER RETREAT!");
 					                            document.location.reload();
 					                        }
 					                    }
