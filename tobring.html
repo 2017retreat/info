@@ -32,7 +32,19 @@
 
 
 <link rel="stylesheet" href="assets/style.css">
-
+<style>
+    #left {
+      width: 200px;
+      float: left;
+    }
+    #right {
+      margin-left: 200px;
+      /* Change this to whatever the width of your left column is*/
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
 </head>
 
 <body id="home">
@@ -70,6 +82,7 @@
 							</div>
 								<div class="container">
 									<form method="post">
+										<div id="left">
 	        							<fieldset>
 										<input type="checkbox" name="bring" value="Bible" /> Bible<br />
 										<input type="checkbox" name="bring" value="CareCard" /> Care Card<br />
@@ -78,6 +91,8 @@
 										<input type="checkbox" name="bring" value="soap" /> Soap, face cloth and towel<br />
 										<input type="checkbox" name="bring" value="toothbrush" /> Toothbrush and toothpaste<br />
 										<input type="checkbox" name="bring" value="clothing" /> General everyday clothing<br />
+									</div>
+									<div id="right">
 										<input type="checkbox" name="bring" value="suntan" /> Suntan lotion or sun screen<br />
 										<input type="checkbox" name="bring" value="sleepingbag" /> Sleeping bag (or bedding sheet and blanket)<br />
 										<input type="checkbox" name="bring" value="pillow" /> Pillow and pajamas<br />
@@ -85,33 +100,40 @@
 										<input type="checkbox" name="bring" value="pants" /> Long pants and warm clothing<br />
 										<input type="checkbox" name="bring" value="raingear" /> Rain gear or umbrella<br />
 										<input type="checkbox" name="bring" value="money" /> Reasonable amount of money<br />
+									</div>
+									<div class="clear"></div>
 	        							</fieldset>
 									</form>
-								</div>
+								</div><br><br>
 						</div>
 						<br>
 						<div class="row mt">
 							<div class=" col-lg-offset-3 centered">
-								<h4>To-bring Checklist</h4>
+								<h4>Things NOT To-bring</h4>
 								<hr>
 							</div>
 								<div class="container">
 									<form method="post">
 	        							<fieldset>
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Electronic game console<br/>
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Comics<br/>
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Knives<br/>
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Tobacco products <br />
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Alcohol and illicit drugs <br/>
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Personal valuables <br />
-										<img src="assets/icons/error.png" width="30" height="30"alt="error"> Large amount of cash<br />
-	        							</fieldset>
+											<div id="left">
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Electronic game console<br/>
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Comics<br/>
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Knives<br/>
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Tobacco products <br />
+											</div>
+											<div id="right">
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Alcohol and illicit drugs <br/>
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Personal valuables <br />
+												<img src="assets/icons/error.png" width="20" height="20"alt="error"> Large amount of cash<br />
+											</div>
+											<div class="clear"></div>
+	        								</fieldset>
 									</form>
 								</div>
 						</div>
 					<p></p>
 					<img src="images/photos/dorm.jpg" width="900" height="600"alt="dorm">
-
+					<br>
 					<p></p>
 					<section id="mustknow" name="mustknow"></section>
 					<p></p>
